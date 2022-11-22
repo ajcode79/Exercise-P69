@@ -1,0 +1,18 @@
+static void Main(string[] args)
+ {
+ string name; 
+ byte n, count = 0;
+ Console.Write("Enter number of students:");
+ n = byte.Parse(Console.ReadLine()); 
+ Console.Clear();
+ for (byte i = 1; i <= n; ++i)
+ {
+ Console.Write("Student Name {0}: ",i);
+ name = Console.ReadLine();
+ if (name == "masoomeh" || name == "Masoomeh")
+ count++;
+ }
+ Console.WriteLine("The number of students with the name of Masoomeh: 
+{0}", count);
+ Console.ReadLine();
+ }
